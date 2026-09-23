@@ -1,0 +1,1 @@
+Zoali Pickles Store v2 — bilingual responsive frontend with product detail, search/filter and cart. Payment/backend are placeholders for the next integration stage.

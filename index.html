@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>زوالی | فروشگاه ترشیجات</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+ <a class="brand" href="#" onclick="goHome()"><img src="logo.svg"><span>ترشی‌جات زوالی<small>ZOALI PICKLES</small></span></a>
+ <nav><a href="#" onclick="goHome()" data-fa="خانه" data-en="Home">خانه</a><a href="#shop" data-fa="فروشگاه" data-en="Shop">فروشگاه</a><a href="#story" data-fa="داستان زوالی" data-en="Our Story">داستان زوالی</a></nav>
+ <div class="actions"><button id="lang" class="pill">EN</button><button id="cartBtn" class="cart">سبد خرید <b id="count">0</b></button></div>
+</header>
+
+<div id="home">
+<section class="hero">
+ <div class="copy"><span class="eyebrow" data-fa="ترشی‌های دست‌ساز زوالی" data-en="Zoali handcrafted pickles">ترشی‌های دست‌ساز زوالی</span>
+ <h1 data-fa="طعم اصیل،<br><em>بسته‌بندی مدرن.</em>" data-en="Authentic taste,<br><em>modern presentation.</em>">طعم اصیل،<br><em>بسته‌بندی مدرن.</em></h1>
+ <p data-fa="ترشی‌های ترد و خوش‌عطر با مواد اولیه تازه و دستورهای اصیل. یک شیشه زوالی، حال‌وهوای سفره را عوض می‌کند."
+ data-en="Crisp, aromatic pickles made with fresh ingredients and authentic recipes. One Zoali jar can transform your table.">ترشی‌های ترد و خوش‌عطر با مواد اولیه تازه و دستورهای اصیل. یک شیشه زوالی، حال‌وهوای سفره را عوض می‌کند.</p>
+ <a class="primary" href="#shop" data-fa="مشاهده محصولات ←" data-en="Shop products →">مشاهده محصولات ←</a>
+ <div class="trust"><span>✓ مواد اولیه تازه</span><span>✓ دست‌ساز</span><span>✓ بسته‌بندی بهداشتی</span></div></div>
+ <div class="hero-art"><div class="blob"></div><div class="jar"><div class="lid"></div><div class="label">ZOALI<small>PICKLES</small></div><div class="pickles">🥒🌶️🫑</div></div><span class="leaf a">🌿</span><span class="leaf b">🌿</span></div>
+</section>
+<section class="section" id="shop"><div class="section-head"><div><span class="eyebrow" data-fa="فروشگاه زوالی" data-en="Zoali shop">فروشگاه زوالی</span><h2 data-fa="محصولات ما" data-en="Our products">محصولات ما</h2></div>
+ <div class="tools"><input id="search" placeholder="جست‌وجوی محصول..." data-fa-placeholder="جست‌وجوی محصول..." data-en-placeholder="Search products..."><select id="category"><option value="all">همه دسته‌ها</option><option value="mixed">ترشی مخلوط</option><option value="liteh">لیته</option><option value="cucumber">خیارشور</option><option value="spicy">تند و فلفلی</option></select></div></div>
+ <div class="grid" id="products"></div>
+</section>
+<section class="story" id="story"><div><span class="eyebrow" data-fa="داستان زوالی" data-en="Our story">داستان زوالی</span><h2 data-fa="از آشپزخانه‌ی ما<br>تا سفره‌ی شما" data-en="From our kitchen<br>to your table">از آشپزخانه‌ی ما<br>تا سفره‌ی شما</h2></div><p data-fa="زوالی با عشق به طعم‌های ماندگار شکل گرفته است؛ ترکیبی از دستورهای خانوادگی، سبزیجات تازه و بسته‌بندی مدرن. ما هر شیشه را با دقت آماده می‌کنیم تا یک طعم خوش‌خاطره به سفره شما اضافه شود."
+data-en="Zoali was created from a love of memorable flavors—family recipes, fresh vegetables and modern packaging. Every jar is prepared with care to bring a memorable taste to your table.">زوالی با عشق به طعم‌های ماندگار شکل گرفته است؛ ترکیبی از دستورهای خانوادگی، سبزیجات تازه و بسته‌بندی مدرن. ما هر شیشه را با دقت آماده می‌کنیم تا یک طعم خوش‌خاطره به سفره شما اضافه شود.</p></section>
+</div>
+
+<section id="productPage" class="product-page hidden"></section>
+
+<aside id="drawer" class="drawer"><div class="drawer-head"><h3 data-fa="سبد خرید" data-en="Cart">سبد خرید</h3><button id="close">×</button></div><div id="items"></div><div class="shipping"><span>ارسال</span><strong id="ship">€0</strong></div><div class="total"><span>مجموع</span><strong id="total">€0</strong></div><button class="primary checkout" id="checkout">ثبت سفارش</button></aside>
+<div id="shade"></div>
+<footer><div class="footer-brand"><img src="logo.svg"><b>ترشی‌جات زوالی</b></div><span>Instagram · WhatsApp · Email</span><span>© 2026 Zoali Pickles</span></footer>
+<script src="script.js"></script>
+</body></html>
